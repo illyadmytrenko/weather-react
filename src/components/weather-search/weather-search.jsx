@@ -42,7 +42,7 @@ export function WeatherSearch({ setCity, setError, setIsFavorite, favorites }) {
         >
           Check Weather
         </UiButton>
-        {favorites.length != 0 && (
+        {favorites && favorites.length != 0 && (
           <UiButton
             onClick={handleClickToFavorites}
             size="md"
